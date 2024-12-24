@@ -40,13 +40,13 @@ jobs:
 
       # Remame index.html to 404.html
       - name: Rename index.html to 404.html
-        run: mv browser/index.html browser/404.html
+        run: mv dist/tutorial/index.html dist/tutorial/404.html
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4.1.0
         with:
-          build_dir: browser
+          build_dir: dist/tutorial
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       
