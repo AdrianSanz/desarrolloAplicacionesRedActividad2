@@ -1,0 +1,42 @@
+<div class="installation-container">
+    <h1>Cómo instalar Angular en tu equipo local</h1>
+
+    <section>
+        <h2>Paso 1: Instalar Node.js</h2>
+        <p>
+            Angular requiere Node.js para funcionar. Sigue estos pasos:
+        </p>
+        <ol>
+            <li>Visita el sitio oficial de <a href="https://nodejs.org" target="_blank">Node.js</a>.</li>
+            <li>Descarga la versión LTS recomendada para tu sistema operativo y que sea compatible con la versión de Angular que quieres utilizar.</li>
+            <li>Instala Node.js siguiendo las instrucciones del instalador.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Paso 2: Instalar Angular CLI</h2>
+        <p>
+            Una vez que tengas Node.js instalado, abre una terminal y ejecuta el siguiente comando:
+        </p>
+        <pre>npm install -g &#64;angular/cli</pre>
+        <p>
+            Esto instalará Angular CLI de manera global en tu equipo.
+        </p>
+    </section>
+
+    <section>
+        <h2>Paso 3: Crear un nuevo proyecto</h2>
+        <p>
+            Para crear un nuevo proyecto en Angular, ejecuta el siguiente comando en tu terminal:
+        </p>
+        <pre>ng new nombre-del-proyecto</pre>
+        <p>
+            Para crear módulos dentro de tu proyecto, ejecuta el siguiente comando en tu terminal:
+        </p>
+        <pre>ng g module nombre-del-modulo</pre>
+        <p>
+            Para crear componentes dentro de tu módulo, ejecuta el siguiente comando en tu terminal:
+        </p>
+        <pre>ng g component nombre-del-componente --flat -m nombre-del-modulo</pre>
+    </section>
+</div>
