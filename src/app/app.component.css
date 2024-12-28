@@ -63,13 +63,11 @@ main {
 .content {
   display: flex;
   width: 100%;
-  max-width: max-content;
   margin-bottom: 3rem;
   padding: 1.5rem;
 }
 
 .left-side {
-  flex: 10%;
   min-width: 170px;
   max-width: 170px;
 }
@@ -83,14 +81,14 @@ main {
 }
 
 .divider {
-  flex: 1 1 1px;
+  flex: 0 0 1px;
   width: 1px;
   background: var(--red-to-pink-to-purple-vertical-gradient);
 }
 
 .right-side {
-  flex: 90%;
   padding-inline-start: 1.5rem;
+  height: auto;
 }
 
 .pill-group {
@@ -170,9 +168,8 @@ main {
 @media screen and (max-width: 650px) {
   .content {
     flex-direction: column;
-    width: max-content;
   }
-  
+
   .left-side {
     min-width: max-content;
     max-width: max-content;
@@ -186,9 +183,17 @@ main {
   }
 
   .divider {
+    flex: 0 0 1px;
     height: 1px;
     width: 100%;
     background: var(--red-to-pink-to-purple-horizontal-gradient);
     margin-block: 1.5rem;
   }
+
+  .right-side {
+    width: 100%;
+    max-height: 1200px;
+    padding-inline-start: 1.5rem;
+  }
+
 }
