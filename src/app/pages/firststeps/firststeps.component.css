@@ -1,24 +1,31 @@
-.home-container {
+.firststeps-container {
     font-family: Arial, sans-serif;
     padding: 20px;
     line-height: 1.6;
 }
 
-.home-container h1 {
+.firststeps-container h1 {
     color: #007bff;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.home-container section {
+.firststeps-container section {
     margin-bottom: 30px;
 }
 
-.home-container a {
+.firststeps-container a {
     color: #007bff;
     text-decoration: none;
 }
 
-.home-container a:hover {
+.firststeps-container a:hover {
     text-decoration: underline;
+}
+
+pre {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
 }

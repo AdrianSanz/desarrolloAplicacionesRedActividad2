@@ -2,15 +2,34 @@
     <h1>Cómo instalar Angular en tu equipo local</h1>
 
     <section>
+        <h2>Compatibilidad de versiones</h2>
+        <p>
+            Antes de instalar Angular tienes que asegurarte de las versiones de las herramientas que vas a utilizar son
+            compatibles. Por ejemplo, si vas a utilizar Angular 19, necesitas tener instalado Node.js 18.19.1 o superior.
+            Puedes consultar la <a href="https://angular.dev/reference/versions" target="_blank">página oficial de
+                Angular</a> para más información.
+        </p>
+        <p>Esta web se ha generado con las siguientes versiones:</p>
+        <ul>
+            <li>Node.js: 20.9.0</li>
+            <li>Angular CLI: 17.3.11</li>
+            <li>Package Manager: npm 9.6.3</li>
+        </ul>
+    </section>
+    <section>
         <h2>Paso 1: Instalar Node.js</h2>
         <p>
             Angular requiere Node.js para funcionar. Sigue estos pasos:
         </p>
         <ol>
             <li>Visita el sitio oficial de <a href="https://nodejs.org" target="_blank">Node.js</a>.</li>
-            <li>Descarga la versión LTS recomendada para tu sistema operativo y que sea compatible con la versión de Angular que quieres utilizar.</li>
+            <li>Descarga la versión LTS recomendada para tu sistema operativo y que sea compatible con la versión de
+                Angular que quieres utilizar.</li>
             <li>Instala Node.js siguiendo las instrucciones del instalador.</li>
         </ol>
+        <p>
+            Instalar Node.js también instalará npm, el gestor de paquetes de Node.js, que necesitarás para instalar Angular.
+        </p>
     </section>
 
     <section>
@@ -25,18 +44,10 @@
     </section>
 
     <section>
-        <h2>Paso 3: Crear un nuevo proyecto</h2>
+        <h2>Paso 3: Instalar un IDE</h2>
         <p>
-            Para crear un nuevo proyecto en Angular, ejecuta el siguiente comando en tu terminal:
+            Es recomendable instalar un IDE como Visual Studio Code para trabajar con Angular. Puedes descargarlo desde la <a
+                href="https://code.visualstudio.com/" target="_blank">página oficial de Visual Studio Code</a>.
         </p>
-        <pre>ng new nombre-del-proyecto</pre>
-        <p>
-            Para crear módulos dentro de tu proyecto, ejecuta el siguiente comando en tu terminal:
-        </p>
-        <pre>ng g module nombre-del-modulo</pre>
-        <p>
-            Para crear componentes dentro de tu módulo, ejecuta el siguiente comando en tu terminal:
-        </p>
-        <pre>ng g component nombre-del-componente --flat -m nombre-del-modulo</pre>
     </section>
 </div>

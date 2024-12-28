@@ -1,0 +1,59 @@
+<div class="firststeps-container">
+    <h1>Primeros pasos</h1>
+    <section>
+        <h2>Paso 1: Crear un nuevo proyecto</h2>
+        <p>
+            Posicionate en la carpeta donde quieres crear tu proyecto y abre un terminal. Para crear un nuevo proyecto
+            en Angular, ejecuta el siguiente comando:
+        </p>
+        <pre>ng new hello-world</pre>
+        <p>Elige las siguientes opciones durante la configuración:</p>
+        <ul>
+            <li>¿Quieres habilitar el enrutamiento? <b>No</b> (puedes añadirlo después si lo necesitas).</li>
+            <li>Selecciona <b>CSS</b> como formato de estilos (o tu preferido).</li>
+        </ul>
+
+        <p>Sustituye el contenido de app.component.html con el siguiente código para que se visualice un titulo con el
+            texto "Hello, World!"</p>
+        <pre>&#60;h1&#62;Hello, World!&#60;/h1&#62;</pre>
+    </section>
+    <section>
+        <h2>Paso 2: Crear nuevos módulos y componentes</h2>
+        <p>
+            Si quieres crear nuevos módulos dentro de tu proyecto, para estructurar las vistas, ejecuta el siguiente
+            comando en tu terminal:
+        </p>
+        <pre>ng g module nombre-del-modulo</pre>
+        <p>
+            Para crear componentes dentro de tu módulo ejecuta el siguiente comando en tu terminal:
+        </p>
+        <pre>ng g component nombre-del-componente --flat -m nombre-del-modulo</pre>
+    </section>
+    <section>
+        <h2>Paso 3: Enlazar módulos y componentes</h2>
+        <p>
+            Para enlazar los módulos y componentes que has creado, modifica el archivo app.module.ts y añade los módulos
+            a la lista de imports.
+        </p>
+        <p>Para añadir las rutas modifica el archivo app.routes.ts y añade los path con los componentes a los que hace
+            referencia.</p>
+        <p>Asegurate que en el archivo app.component.ts tienes importados RouterModule y RouterOutlet, ya que son
+            necesarios para enlazar los componentes.</p>
+        <p>
+            Por último, modifica el archivo app.component.html para añadir el router-outlet que mostrará los componentes
+            en función de la ruta.
+        </p>
+    </section>
+    <section>
+        <h2>Paso 4: Levantar la aplicación en local</h2>
+        <p>
+            En tu terminal, ejecuta el siguiente comando para levantar la aplicación en local:
+        </p>
+        <pre>npm start</pre>
+        <p>
+           Esto levantará tu aplicación en el puerto 4200 por defecto. Abre tu navegador y accede a la dirección <a
+                href="http://localhost:4200" target="_blank">http://localhost:4200</a> para ver tu aplicación en
+            funcionamiento.
+        </p>
+    </section>
+</div>
